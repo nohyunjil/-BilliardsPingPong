@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{77DF004E-8B82-EAFF-ED5E-86B0CC5B47C4}</ProjectGuid>
+    <ProjectGuid>{DD1CBCA7-ED6C-D6B7-0AA7-A0027CE07772}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,10 +54,44 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\NoEditor\Sirenix.Serialization.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\NoEmitAndNoEditor\Sirenix.Utilities.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\NoEditor\Sirenix.Utilities.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\NoEmitAndNoEditor\Sirenix.Serialization.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll" />
+    <Analyzer Include="C:\Users\nohyu\OneDrive\문서\GitHub\-BilliardsPingPong\Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\BallMovement.cs" />
+    <Compile Include="Assets\Code\BallMovement.cs" />
+    <Compile Include="Assets\Code\UIcontroller.cs" />
+    <Compile Include="Assets\Code\BallAttack.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\NoEmitAndNoEditor\Sirenix.Serialization.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.xml" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.xml" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\NoEditor\Sirenix.Serialization.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.xml" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Utilities.xml" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\NoEditor\Sirenix.Utilities.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Readme.txt" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\link.xml" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.xml" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\NoEmitAndNoEditor\Sirenix.Utilities.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll" />
+    <None Include="Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Serialization.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -315,35 +349,35 @@
     <Reference Include="Unity.Burst.Cecil">
       <HintPath>Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Cecil.Rocks">
-      <HintPath>Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Rocks">
+      <HintPath>Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Reflection.Editor">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
+      <HintPath>Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+      <HintPath>Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+      <HintPath>Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization.Config">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+      <HintPath>Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+      <HintPath>Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+      <HintPath>Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
-      <HintPath>Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
+      <HintPath>Assets\Asset\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -845,9 +879,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{A857654C-B207-CD2F-E20F-F4392E4A917E}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
+    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
+      <Project>{CE6D00E8-6FB3-20FD-A10C-1E688883B160}</Project>
+      <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

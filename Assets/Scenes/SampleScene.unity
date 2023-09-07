@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 560872020}
   - component: {fileID: 560872019}
   - component: {fileID: 560872018}
+  - component: {fileID: 560872022}
   m_Layer: 0
   m_Name: subball6
   m_TagString: Untagged
@@ -538,6 +539,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560872014}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &560872022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560872014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &611476592
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +649,7 @@ GameObject:
   - component: {fileID: 622947389}
   - component: {fileID: 622947388}
   - component: {fileID: 622947387}
+  - component: {fileID: 622947391}
   m_Layer: 0
   m_Name: subball4
   m_TagString: Untagged
@@ -733,6 +751,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622947383}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &622947391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622947383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &809465512
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +780,7 @@ GameObject:
   - component: {fileID: 809465518}
   - component: {fileID: 809465517}
   - component: {fileID: 809465516}
+  - component: {fileID: 809465520}
   m_Layer: 0
   m_Name: subball10
   m_TagString: Untagged
@@ -766,7 +801,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1653237806}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &809465516
 Rigidbody:
@@ -847,6 +882,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809465512}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &809465520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809465512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +960,7 @@ GameObject:
   - component: {fileID: 860137531}
   - component: {fileID: 860137530}
   - component: {fileID: 860137529}
+  - component: {fileID: 860137533}
   m_Layer: 0
   m_Name: subball3
   m_TagString: Untagged
@@ -1010,6 +1062,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860137525}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &860137533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860137525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &1085926004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,6 +1190,7 @@ GameObject:
   - component: {fileID: 1192277383}
   - component: {fileID: 1192277388}
   - component: {fileID: 1192277389}
+  - component: {fileID: 1192277390}
   m_Layer: 0
   m_Name: MainBall
   m_TagString: Untagged
@@ -1221,7 +1290,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1653237806}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1192277388
 MonoBehaviour:
@@ -1258,7 +1327,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 30a8575e1d4cc4e01a88ffbf4f973d80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1311,8 +1380,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 1, g: 0, b: 0, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1346,6 +1415,22 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1192277390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192277382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 20
+  secondaryDamage: 10
+  isAttacker: 1
 --- !u!1 &1195864875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1674,7 @@ GameObject:
   - component: {fileID: 1423685179}
   - component: {fileID: 1423685178}
   - component: {fileID: 1423685177}
+  - component: {fileID: 1423685181}
   m_Layer: 0
   m_Name: subball5
   m_TagString: Untagged
@@ -1690,6 +1776,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423685173}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1423685181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423685173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &1540705218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,6 +1805,7 @@ GameObject:
   - component: {fileID: 1540705224}
   - component: {fileID: 1540705223}
   - component: {fileID: 1540705222}
+  - component: {fileID: 1540705226}
   m_Layer: 0
   m_Name: subball8
   m_TagString: Untagged
@@ -1718,12 +1821,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540705218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.16}
+  m_LocalPosition: {x: 18.7, y: 1, z: -0.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1781504918}
-  m_RootOrder: 0
+  m_Father: {fileID: 1653237806}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1540705222
 Rigidbody:
@@ -1804,6 +1907,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540705218}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1540705226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540705218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &1609707602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,6 +2055,7 @@ Transform:
   - {fileID: 1423685174}
   - {fileID: 560872015}
   - {fileID: 1781504918}
+  - {fileID: 1540705219}
   - {fileID: 1879095327}
   - {fileID: 809465513}
   - {fileID: 1192277387}
@@ -1955,6 +2075,7 @@ GameObject:
   - component: {fileID: 1671972959}
   - component: {fileID: 1671972958}
   - component: {fileID: 1671972957}
+  - component: {fileID: 1671972961}
   m_Layer: 0
   m_Name: subball2
   m_TagString: Untagged
@@ -2056,6 +2177,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671972953}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1671972961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671972953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &1781504917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,6 +2206,7 @@ GameObject:
   - component: {fileID: 1781504923}
   - component: {fileID: 1781504922}
   - component: {fileID: 1781504921}
+  - component: {fileID: 1781504925}
   m_Layer: 0
   m_Name: subball7
   m_TagString: Untagged
@@ -2087,8 +2225,7 @@ Transform:
   m_LocalPosition: {x: 18.7, y: 1, z: 0.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1540705219}
+  m_Children: []
   m_Father: {fileID: 1653237806}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2171,6 +2308,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781504917}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1781504925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781504917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &1783308295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,6 +2337,7 @@ GameObject:
   - component: {fileID: 1783308301}
   - component: {fileID: 1783308300}
   - component: {fileID: 1783308299}
+  - component: {fileID: 1783308303}
   m_Layer: 0
   m_Name: subball1
   m_TagString: Untagged
@@ -2285,6 +2439,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783308295}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1783308303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783308295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &1879095326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,6 +2468,7 @@ GameObject:
   - component: {fileID: 1879095332}
   - component: {fileID: 1879095331}
   - component: {fileID: 1879095330}
+  - component: {fileID: 1879095334}
   m_Layer: 0
   m_Name: subball9
   m_TagString: Untagged
@@ -2318,7 +2489,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1653237806}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1879095330
 Rigidbody:
@@ -2399,6 +2570,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879095326}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1879095334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879095326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c348432c6e95c4f9908f926d730ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  primaryDamage: 10
+  secondaryDamage: 5
+  isAttacker: 0
 --- !u!1 &1888721593
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2718,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &2122339463
 MonoBehaviour:
   m_ObjectHideFlags: 0
