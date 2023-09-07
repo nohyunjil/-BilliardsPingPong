@@ -22,7 +22,9 @@ public class BallMovement : MonoBehaviour
         lineRenderer.enabled = false;
 
         defaultText = statusText.text;
+
     }
+
 
     void Update()
     {
@@ -38,14 +40,27 @@ public class BallMovement : MonoBehaviour
 
             if (isDragging)
             {
+                Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Vector3.Distance(Camera.main.transform.position, transform.position)));
+
+                // 방향 벡터 계산
+                Vector3 direction = (transform.position - mouseWorldPos).normalized;
+                float lineLength = (mouseWorldPos - transform.position).magnitude;
+
+                if (lineLength > maxDragLength)
+                {
+                    lineLength = maxDragLength;
+                }
+
+                // 시작점과 끝점 설정
+                Vector3 lineStart = new Vector3(transform.position.x, 1, transform.position.z);
+                Vector3 lineEnd = new Vector3(transform.position.x + direction.x * lineLength, 1, transform.position.z + direction.z * lineLength);
+
+                DrawLine(lineStart, lineEnd);
+
                 Vector3 endDragPos = Input.mousePosition;
                 Vector3 dragVector = endDragPos - startDragPos;
-                Vector3 worldStart = Camera.main.ScreenToWorldPoint(new Vector3(startDragPos.x, startDragPos.y, Camera.main.nearClipPlane));
-                Vector3 worldEnd = Camera.main.ScreenToWorldPoint(new Vector3(endDragPos.x, endDragPos.y, Camera.main.nearClipPlane));
-                DrawLine(worldStart, worldEnd);
 
-                float distance = Vector3.Distance(transform.position, worldEnd);
-                statusText.text = $"멈춤 상태: {isStopped}\n당겼을 때의 파워: {dragVector.magnitude * powerMultiplier}\n마우스와의 거리: {distance}";
+                statusText.text = $"멈춤 상태: {isStopped}\n당겼을 때의 파워: {dragVector.magnitude * powerMultiplier}\n마우스와의 거리: {lineLength}";
             }
             else
             {
@@ -62,7 +77,11 @@ public class BallMovement : MonoBehaviour
                     dragVector = dragVector.normalized * maxDragLength;
                 }
 
-                Vector3 force = new Vector3(-dragVector.x, 0, -dragVector.y) * powerMultiplier;
+                float dragDistance = dragVector.magnitude;
+                float powerRatio = dragDistance / maxDragLength; // 0에서 1 사이의 값
+                float appliedPower = powerMultiplier * powerRatio; // 만약 20만큼 당기면 appliedPower는 100이 됩니다.
+
+                Vector3 force = new Vector3(-dragVector.x, 0, -dragVector.y) * appliedPower;
                 rb.AddForce(force);
 
                 isDragging = false;
